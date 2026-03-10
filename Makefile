@@ -104,10 +104,10 @@ libhv.a:
 libspdlog.a:
 	@mkdir -p $(SPDLOG_DIR)/build
 	@cmake -B $(SPDLOG_DIR)/build -S $(SPDLOG_DIR)/ -DCMAKE_CXX_COMPILER=$(CXX)
-	$(MAKE) -C $(SPDLOG_DIR)/build -j$(nproc)
+	$(MAKE) -C $(SPDLOG_DIR)/build -j2
 
 wpaclient:
-	$(MAKE) -C wpa_supplicant/wpa_supplicant -j$(nproc) libwpa_client.a
+	$(MAKE) -C wpa_supplicant/wpa_supplicant -j2 libwpa_client.a
 
 $(BUILD_OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
@@ -159,6 +159,6 @@ build:
 	$(MAKE) spdlogclean
 	$(MAKE) libspdlog.a
 	$(MAKE) clean
-	$(MAKE) -j$(nproc)
+	$(MAKE) -j2
 
 -include			$(DEPS)
