@@ -159,6 +159,6 @@ build:
 	$(MAKE) spdlogclean
 	$(MAKE) libspdlog.a
 	$(MAKE) clean
-	$(MAKE) -j2
+	$(MAKE) --jobs=1
 
 -include			$(DEPS)
