@@ -21,6 +21,7 @@ Guppy Screen is a touch UI for Klipper using APIs exposed by Moonraker. It build
 ## Added chamber tempereture to print status page and changed extruder page (temp list and speed and lenght list)
 2026.03.03. PyCos
 Install script pointed to current repo.
+2026.03.10 build by PyCos 
 
 ## Installation / Update
 Run the following interactive script via SSH on your K1/Max/CR-10 SE/Ender 3 V3 KE/Nebula Pad to install Guppy Screen.
