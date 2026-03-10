@@ -108,7 +108,7 @@ jobs:
       run: make libspdlog.a
 
     - name: make guppyscreen
-      run: make -j
+      run: make -j2
 
     - name: make kd_graphic_mode
       run: make kd_graphic_mode
