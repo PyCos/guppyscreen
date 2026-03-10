@@ -8,7 +8,7 @@ white=`echo "\033[m"`
 BACKUP_DIR=/usr/data/guppyify-backup
 K1_GUPPY_DIR=/usr/data/guppyscreen
 FT2FONT_PATH=/usr/lib/python3.8/site-packages/matplotlib/ft2font.cpython-38-mipsel-linux-gnu.so
-ASSET_NAME="guppyscreen"
+ASSET_NAME="guppyscreen-PyCos-fork"
 
 if [ "$1" = "zbolt" ]; then
     ASSET_NAME="$ASSET_NAME-zbolt"
@@ -82,11 +82,11 @@ rm -rf /root/.cache
 wget -q --no-check-certificate https://raw.githubusercontent.com/ballaswag/k1-discovery/main/bin/curl -O /tmp/curl
 chmod +x /tmp/curl
 
-ASSET_URL="https://github.com/probielodan/guppyscreen/releases/latest/download/$ASSET_NAME.tar.gz"
+ASSET_URL="https://github.com/PyCos/guppyscreen-PyCos-fork/releases/latest/download/$ASSET_NAME.tar.gz"
 
 if [ "$1" = "nightly" ] || [ "$2" = "nightly" ]; then
     printf "${yellow}Installing nightly build ${white}\n"
-    ASSET_URL="https://github.com/probielodan/guppyscreen/releases/download/nightly/$ASSET_NAME.tar.gz"
+    ASSET_URL="https://github.com/PyCos/guppyscreen-PyCos-fork/releases/download/nightly/$ASSET_NAME.tar.gz"
 fi
 
 printf "${green} Downloading asset: $ASSET_NAME.tar.gz ${white}\n"
