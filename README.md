@@ -79,7 +79,7 @@ Open for feature requests.
 You can find various Guppy Screen documents [here](https://ballaswag.github.io/docs/guppyscreen/configuration/).
 
 ## Screenshot
-### Material Theme
+### Material Theme - ORIGINAL SCREENSHOTS - NOT UPDATED by me
 ![Material Theme Guppy Screen](https://github.com/probielodan/guppyscreen/blob/main/screenshots/material/material_screenshot.png)
 
 Earlier development screenshots can be found [here](https://github.com/probielodan/guppyscreen/blob/main/screenshots)
