@@ -18,44 +18,31 @@ Guppy Screen is a touch UI for Klipper using APIs exposed by Moonraker. It build
       <img src="https://img.shields.io/github/last-commit/probielodan/guppyscreen?style=flat-square">
   </a>
 </p>
-## Added chamber tempereture to print status page and changed extruder page (temp list and speed and lenght list)
+#### Added chamber tempereture to print status page (forked from Koenpunt) and changed extruder page (temp list and speed and lenght list)
 2026.03.03. PyCos
+
 Install script pointed to current repo.
 2026.03.10 build by PyCos 
+
+####  USE THE NIGHTLY MATERIAL INSTALL SCRIPT - TESTED 2026.03.16 on K1C @ PyCos #### 
 
 ## Installation / Update
 Run the following interactive script via SSH on your K1/Max/CR-10 SE/Ender 3 V3 KE/Nebula Pad to install Guppy Screen.
 
-#### Material Design Theme
-``` FIXED 2026.03.16.
+#### Material Design Theme - fixed URL 2026.03.16
+``` 
 sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/PyCos/guppyscreen/refs/heads/main/scripts/installer.sh)"
 ```
 
-#### Z-Bolt Theme (Only for the K1/Max)
+#### Z-Bolt Theme (Only for the K1/Max) - fixed URL 2026.03.16 - NOT TESTED !
 ```
-sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/probielodan/guppyscreen/main/scripts/installer.sh)" -s zbolt
-```
-
-### Install on a PI (Debian/Raspbian)
-Tested on a BTT Pad 7. Please install with care and make sure you're okay with resetting your setup if things break.
-```
-wget -O - https://raw.githubusercontent.com/probielodan/guppyscreen/main/scripts/installer-deb.sh | bash
+sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/PyCos/guppyscreen/refs/heads/main/scripts/installer.sh)" -s zbolt
 ```
 
 ### Nightly Builds
-#### Material (Nightly)
-``` FIXED 2026.03.16. THIS IS THE BETA TEST VERSION
+#### Material (Nightly) - FIXED 2026.03.16. THIS IS LATEST VERSION - WORKING SOLUTION 2026.03.16. PyCos ####
+``` 
 sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/PyCos/guppyscreen/refs/heads/main/scripts/installer.sh)" -s nightly
-```
-
-#### Z-Bolt (Nightly)
-```
-sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/probielodan/guppyscreen/main/scripts/installer.sh)" -s zbolt nightly
-```
-
-#### Raspbian Variant (Nightly)
-```
-wget -O - https://raw.githubusercontent.com/probielodan/guppyscreen/main/scripts/installer-deb.sh | bash -s nightly
 ```
 
 ## Uninstall
