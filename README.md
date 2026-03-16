@@ -45,7 +45,7 @@ wget -O - https://raw.githubusercontent.com/probielodan/guppyscreen/main/scripts
 ### Nightly Builds
 #### Material (Nightly)
 ``` FIXED 2026.03.16.
-sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/PyCos/guppyscreen-PyCos-fork/refs/heads/main/scripts/installer.sh?token=GHSAT0AAAAAADT6LBMJQLHQXOG3Y42LCGRM2NYKSIQ)" -s nightly
+sh -c "$(wget --no-check-certificate -qO - sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/PyCos/guppyscreen-PyCos-fork/refs/heads/main/scripts/installer.sh?token=GHSAT0AAAAAADT6LBMJQLHQXOG3Y42LCGRM2NYKSIQ)" -s nightly
 ```
 
 #### Z-Bolt (Nightly)
