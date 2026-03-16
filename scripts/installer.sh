@@ -92,8 +92,8 @@ fi
 printf "${green} Downloading asset: $ASSET_NAME.tar.gz ${white}\n"
 
 # download/extract latest guppyscreen
-/tmp/curl -s -L $ASSET_URL -o /tmp/guppyscreen.tar.gz
-tar xf /tmp/guppyscreen.tar.gz -C /usr/data/
+/tmp/curl -s -L $ASSET_URL -o /tmp/guppyscreen-PyCos-fork.tar.gz
+tar xf /tmp/guppyscreen-PyCos-fork.tar.gz -C /usr/data/
 
 if [ ! -f "$K1_GUPPY_DIR/guppyscreen" ]; then
     printf "${red}Did not find guppyscreen in $K1_GUPPY_DIR. GuppyScreen must be extracted in $K1_GUPPY_DIR ${white}\n"
