@@ -28,7 +28,7 @@ Run the following interactive script via SSH on your K1/Max/CR-10 SE/Ender 3 V3 
 
 #### Material Design Theme
 ``` FIXED 2026.03.16.
-sh -c "$(wget --no-check-certificate -qO - https://github.com/PyCos/guppyscreen-PyCos-fork/main/scripts/installer.sh)"
+sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/PyCos/guppyscreen-PyCos-fork/refs/heads/main/scripts/installer.sh)"
 ```
 
 #### Z-Bolt Theme (Only for the K1/Max)
@@ -45,7 +45,7 @@ wget -O - https://raw.githubusercontent.com/probielodan/guppyscreen/main/scripts
 ### Nightly Builds
 #### Material (Nightly)
 ``` FIXED 2026.03.16.
-sh -c "$(wget --no-check-certificate -qO - https://github.com/PyCos/guppyscreen-PyCos-fork/main/scripts/installer.sh)" -s nightly
+sh -c "$(wget --no-check-certificate -qO - https://raw.githubusercontent.com/PyCos/guppyscreen-PyCos-fork/refs/heads/main/scripts/installer.sh)" -s nightly
 ```
 
 #### Z-Bolt (Nightly)
