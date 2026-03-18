@@ -32,7 +32,7 @@ ExtruderPanel::ExtruderPanel(KWebSocketClient &websocket_client,
 		    {"5", "10", "30", "50", "80", "100", "150", ""},
 		    1, 62, 15, &ExtruderPanel::_handle_callback, this)
   , speed_selector(panel_cont, "Extrude Speed (mm/s)",
-		   {"0.5", "1", "2", "5", "8", "10", "15", ""},
+		   {"1", "2", "5", "8", "10", "15", "20", ""},
 		   2, 62, 15, &ExtruderPanel::_handle_callback, this)
   , rightside_btns_cont(lv_obj_create(panel_cont))
   , leftside_btns_cont(lv_obj_create(panel_cont))
